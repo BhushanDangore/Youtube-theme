@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+
+  "name": "Acrylic Blur For Youtube",
+  "description": "This extension change apperence of youtube website",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "run_at": "document_end",
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["script.js"]
+    }
+  ],
+  "web_accessible_resources": ["themeStyles.css"]
+}
